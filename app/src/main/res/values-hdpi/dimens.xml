@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_line_thickness">5dp</dimen>
+    <dimen name="user_line_length">300dp</dimen>
+    <dimen name="horizontal_line_length">55dp</dimen>
+    <dimen name="circle_layout_thickness">23dp</dimen>
+    <dimen name="ladder_step_min_gap">28dp</dimen>
+    <dimen name="circle_radius">8dp</dimen>
+    <dimen name="user_image_radius">16dp</dimen>
+    <dimen name="ladder_layout_margin">11dp</dimen>
+
+</resources>

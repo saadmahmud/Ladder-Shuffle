@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    android:orientation="vertical"
+    tools:context=".ScndActivity">
+
+    <LinearLayout
+        android:id="@+id/viewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select User : "
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxEms="2"
+            android:minEms="2"
+            android:text="1"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnRelaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="relaunchClick"
+            android:text="re-launch" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimate"
+            android:text="animate" />
+
+        <Button
+            android:id="@+id/btnLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showLogClick"
+            android:text="show Log"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:fadeScrollbars="false"
+        android:padding="40dp"
+        android:scrollbars="horizontal"
+        tools:context=".ScndActivity">
+
+        <LinearLayout
+            android:id="@+id/viewHolderLayoutMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:id="@+id/layoutUserView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutLadderView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
